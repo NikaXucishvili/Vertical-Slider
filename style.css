@@ -100,33 +100,39 @@ button:focus{
 
 
 @media screen and (max-width: 932px) {
-    .slider-container{
-        display: flex;
-        flex-direction: column;
-    }
-
     .left-slide h1{
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .left-slide p{
-        font-size: 15px;
+        font-size: 13px;
     }
-}
-
-
-@media screen and (max-width: 774px) {
 
     .slider-container .action-buttons .up-button, .down-button{
         width: 30px;
         height: 30px;
-        align-items: center;
         display: flex;
         justify-content: center;
+        align-items: center;
+    }
+
+    .slider-container  .action-buttons button{
+        position: absolute;
+        left: 35%;
+        top: 60%;
+    }
+
+    .left-slide{
+        margin-left: 0px;
     }
 }
 
-@media screen and (max-width: 700px) {
-    
+@media screen and (max-width: 612px) {
+    .left-slide h1{
+        font-size: 15px;
+    }
 
+    .left-slide p{
+        font-size: 10px;
+    }
 }
